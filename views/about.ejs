@@ -67,7 +67,7 @@
   </head>
 
   <body>
-    <div class="main bg-cover bg-center h-full bg-sky-950">
+    <div class="main bg-cover bg-center md:h-[450px] bg-sky-950" >
 
       <main
         class="h-screen w-full bg-no-repeat bg-cover"
@@ -76,7 +76,7 @@
       <%-include('./common/header')%>
         <section class="text-gray-400 body-font">
           <div
-            class="container mx-auto flex px-2 py-16 md:flex-row flex-col items-center"
+            class="container mx-auto flex px-2 py-12 md:flex-row flex-col items-center"
             bis_skin_checked="1"
           >
             <div
@@ -97,7 +97,7 @@
               bis_skin_checked="1"
             >
               <img
-                style="height: 331px"
+                style="height: 300px"
                 class="object-cover object-center rounded "
                 alt="hero"
                 src="/images/gbabout.jpg"
@@ -110,23 +110,23 @@
     </div>
            
           <section id="our-team" class="bg-custom-blue ">
-            <div class="container mx-auto px-2  md:pt-12 pt-56">
+            <div class="container mx-auto px-2  md:pt-16 pt-[100px]">
              
               <h2 class="text-3xl font-bold text-center mb-8 text-primary text-white">
                 Meet Our Team
               </h2>
       
           
-              <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-6 gap-2 py-7">
+              <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-6 gap-2 py-6">
                 <% users.forEach(user => { %>
-                  <div class="rounded-xl p-4 my-4 text-center w-auto shadow-2xl shadow-black bg-white  transition-all duration-300 transform hover:scale-105">
+                  <div class="rounded-xl  my-4  text-center w-auto shadow-2xl shadow-black bg-white  transition-all duration-300 transform hover:scale-105">
                     <img
                       src="<%= user.photo %>"
                       alt="<%= user.name %>"
-                      class="w-24 h-24 mx-auto rounded-full mb-2 object-cover" >
+                      class="w-24 h-24 mx-auto rounded-full mb-4 object-cover mt-2" >
                   
                     <div>
-                      <h3 class="text-lg font-semibold mb-1 text-black"><%= user.name %></h3> 
+                      <h3 class="text-lg font-semibold mb-1  text-black"><%= user.name %></h3> 
                       <p class="selection:text-lg text-gray-800 ">Department: <%= user.department %></p> 
                       <p class="text-gray-900 text-sm">Semester: <%= user.semester %></p> 
                     </div>
