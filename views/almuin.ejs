@@ -1,0 +1,246 @@
+
+
+    <%-include('./common/head')%>
+<!-- new style for text -->
+
+<style>
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .fade-in {
+    animation: fadeIn 2s ease-in-out;
+  }
+</style>
+    <style>
+      @keyframes slideDown {
+        0% {
+          height: 100%;
+          opacity: 0;
+        }
+
+        100% {
+          height: 100%;
+          opacity: 1;
+        }
+      }
+
+      @keyframes slideUp {
+        0% {
+          height: 0%;
+          opacity: 1;
+        }
+
+        100% {
+          height: 0%;
+          opacity: 0;
+        }
+      }
+
+      .animate-slideDown {
+        animation: slideDown 2s ease-out forwards;
+      }
+
+      .animate-slideUp {
+        animation: slideUp 5s ease-out forwards;
+      }
+      .back {
+        background-image: url("./images/main.jpg");
+      
+      }
+      .moa{
+  color: white;
+  text-decoration: none;
+
+}
+.moa:hover{
+  color: #d3d3d3;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+    </style>
+  </head>
+
+  <body>
+    <!-- Moazam shigri -->
+  <%-include('./common/header')%>
+ 
+                  <main
+                    class="
+                    h-full w-full bg-no-repeat bg-cover mt-0
+                    "
+                    style="background-image: url('/images/main.jpg') "
+                  >
+               
+      
+      <section class="flex  w-full md:w-[1000px] items-center justify-center py-4 text-center mx-auto">
+        <div class="flex justify-center items-center">
+          <h2 class="text-2xl text-white fade-in px-4 md:px-0 py-3">
+            These graduates from COMSATS University Abbottabad have not only excelled academically but have also embarked on remarkable journeys, carving out successful careers in diverse fields. From technology and healthcare to business and creative industries, their contributions are making a significant impact both locally and globally.
+          </h2>
+        </div>
+      </section>
+  
+      <div class="text-white text-sm py-24 mx-6 md:mx-20 ">
+        <h4>
+          Today, the X Comsians Abbottabad are shining examples of versatility and dedication. They are serving in various sectors, contributing to the growth and development of society:
+        </h4>
+        <ul class="list-disc pl-7 mt-4 text-lg text-white fade-in">
+          <li><strong>In Technology:</strong> Many have become software engineers, IT specialists, and tech entrepreneurs, driving innovation and shaping the future of the digital landscape.</li>
+          <li><strong>In Healthcare:</strong> Some have chosen the noble path of healthcare, working as doctors, researchers, and administrators, improving lives and advancing medical sciences.</li>
+          <li><strong>In Business and Management:</strong> Others have excelled as business leaders, consultants, and analysts, bringing strategic insights and innovation to their organizations.</li>
+          <li><strong>In Creative Industries:</strong> From writers and artists to media professionals, the creative X Comsians are inspiring the world with their talents and vision.</li>
+        </ul>
+      </div>
+   
+
+      <main class="grid grid-cols-1 md:grid-cols-2 gap-4 md:mx-5 mt-14" data-aos="fade-up" data-aos-duration="1000">
+        <!-- Card 1 -->
+        <div class="p-4" data-aos="fade-up" data-aos-duration="1000">
+          <figure class="md:flex max-w-5xl bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-800">
+            <img
+              class="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto object-cover"
+              src="./images/rasheed.jpeg"
+              alt=""
+              width="384"
+              height="512"
+            />
+            <div class="pt-6 md:p-8 text-center md:text-left space-y-2">
+             
+                <p class="text-lg font-medium dark:text-slate-100">
+                  He joined COMSATS University Abbottabad in 2020 in the Electronic Engineering department. Now, he is serving as a manager at a bank.
+                </p>
+           
+              <figcaption class="font-medium">
+                <div class="text-sky-500 dark:text-sky-400">Rasheed Besmill</div>
+                <div class="text-slate-700 dark:text-slate-400">
+                  Manager
+                </div>
+              </figcaption>
+            </div>
+          </figure>
+        </div>
+      
+        <!-- Card 2 -->
+        <div class="p-4">
+          <figure class="md:flex max-w-5xl bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-800">
+            <img
+              class="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto object-cover"
+              src="./images/afzal.jpeg"
+              alt=""
+              width="384"
+              height="512"
+            />
+            <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
+           
+                <p class="text-lg font-medium dark:text-slate-100">
+                  He joined COMSATS University Abbottabad in 2022 in the Computer Science department. Later, he transferred to another university in the same department.
+                </p>
+             
+              <figcaption class="font-medium">
+                <div class="text-sky-500 dark:text-sky-400">Afzal Khan</div>
+                <div class="text-slate-700 dark:text-slate-400">
+                  Student
+                </div>
+              </figcaption>
+            </div>
+          </figure>
+        </div>
+      
+        <!-- Card 3 -->
+        <div class="p-4">
+          <figure class="md:flex max-w-5xl bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-800">
+            <img
+              class="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto object-cover"
+              src="./images/avator.jpg"
+              alt=""
+              width="384"
+              height="512"
+            />
+            <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
+              <blockquote>
+                <p class="text-lg font-medium dark:text-slate-100">
+                  He joined COMSATS University Abbottabad in 2019 in the Pharmacy department. Now, he is serving as a Pharmacist at a Hospital.
+                </p>
+              </blockquote>
+              <figcaption class="font-medium">
+                <div class="text-sky-500 dark:text-sky-400">Shokat Ali</div>
+                <div class="text-slate-700 dark:text-slate-400">
+                  Pharmacist
+                </div>
+              </figcaption>
+            </div>
+          </figure>
+        </div>
+
+        <!-- card 4 -->
+        <div class="p-4">
+          <figure class="md:flex max-w-5xl bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-800">
+            <img
+              class="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto object-cover"
+              src="./images/Sakhawat.jpeg"
+              alt=""
+              width="384"
+              height="512"
+            />
+            <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
+              <blockquote>
+                <p class="text-lg font-medium dark:text-slate-100">
+                  He joined COMSATS University Abbottabad in 2019 in the Pharmacy department. Now, he is serving as a Pharmacist at a Hospital.
+                </p>
+              </blockquote>
+              <figcaption class="font-medium">
+                <div class="text-sky-500 dark:text-sky-400">Sakhawat Ali</div>
+                <div class="text-slate-700 dark:text-slate-400">
+                 Pharmacist
+                </div>
+              </figcaption>
+            </div>
+          </figure>
+        </div>
+
+        <!-- card 5 -->
+        <div class="p-4">
+          <figure class="md:flex max-w-5xl bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-800">
+            <img
+              class="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto object-cover"
+              src="./images/avator.jpg"
+              alt=""
+              width="384"
+              height="512"
+            />
+            <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
+              <blockquote>
+                <p class="text-lg font-medium dark:text-slate-100">
+                  He joined COMSATS University Abbottabad in 2019 in the Electrical department.
+                </p>
+              </blockquote>
+              <figcaption class="font-medium">
+                <div class="text-sky-500 dark:text-sky-400">Muhamamd Nayeem</div>
+                <div class="text-slate-700 dark:text-slate-400">
+                  Engineer
+                </div>
+              </figcaption>
+            </div>
+          </figure>
+        </div>
+     
+      </main>
+    </div>
+ 
+           
+
+    
+    <%-include('./common/footer')%>
+
+    <script src="index.js"></script>
+  </body>
+</html>
