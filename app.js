@@ -59,6 +59,12 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Example route for the homepage
 
 
+
+// new route 
+app.get('/',(req,res)=>{
+    res.redirect('/index')
+})
+
 app.get('/index', (req, res) => {
     res.render('index'); // This will render "views/index.ejs"
 });
@@ -101,7 +107,7 @@ app.post('/logout', (req, res) => {
             return res.redirect('/error');
         }
 
-        res.redirect('/');  // Redirect after setting flash message
+        res.redirect('/login');  // Redirect after setting flash message
     });
 });
 
@@ -120,7 +126,7 @@ app.get('/news', (req, res) => {
 
 
 
-app.get('/', (req, res) => {
+app.get('/login', (req, res) => {
     // Render the login page and pass the flash messages
     res.render('login', { messages: req.flash() });
 });
