@@ -2,10 +2,14 @@
   "name": "gb-students-comsats-university-abt",
   "version": "1.0.0",
   "main": "app.js",
+  "engines": {
+    "node":"22.x"
+  },
   "scripts": {
     "start": "node app.js",
     "build:css": "tailwindcss -i ./public/css/tailwind.css -o ./public/css/style.css --watch",
     "dev": "concurrently \"npm run start\" \"npm run build:css\""
+
   },
   "author": "",
   "license": "ISC",

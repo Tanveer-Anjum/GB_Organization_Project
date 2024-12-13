@@ -27,7 +27,7 @@ app.use(session({
     secret: sessionSecret,
     resave: true,
     saveUninitialized: true,
-    cookie: { 
+    cookie: {
         maxAge: 60 * 60 * 1000, // 1 hour
         httpOnly: true
     }
@@ -75,8 +75,8 @@ app.get('/index', (req, res) => {
 
 app.get('/about', async (req, res) => {
     try {
-        const users = await Users.find(); 
-        res.render('about', { users }); 
+        const users = await Users.find();
+        res.render('about', { users });
     } catch (error) {
         console.error('Error fetching users for About page:', error);
         res.status(500).send('Internal Server Error');
@@ -125,8 +125,8 @@ app.get('/', (req, res) => {
     res.render('login', { messages: req.flash() });
 });
 
-    
-   
+
+
 
 
 
@@ -159,3 +159,4 @@ app.use('/user', userRoutes);
 app.listen(3000, () => {
     console.log('Server is running on port 3000');
 });
+module.exports = app;
