@@ -11,6 +11,14 @@
         height: calc(100vh - 87px);
       }
     </style>
+
+<script>
+  window.onload = function() {
+      // Clear input fields when the page loads
+      document.getElementById('register').value = '';
+      document.getElementById('password').value = '';
+  };
+</script>
   </head>
 
   <body>
@@ -80,7 +88,7 @@
             <form class="space-y-6" action="/admin/register" method="POST">
               <div>
                 <label
-                  for="register"
+                  for="register" 
 
               
                   class="block text-sm font-medium leading-6 text-white"
@@ -91,7 +99,7 @@
                     id="register"
                     name="register"
                     type="register"
-                    autocomplete="register"
+                    autocomplete="off"
                     required
                     hidden
                
@@ -121,7 +129,7 @@
                     id="password"
                     name="password"
                     type="password"
-                    autocomplete="current-password"
+                    autocomplete="off"
                     required
                     hidden
                    
