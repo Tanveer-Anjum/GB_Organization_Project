@@ -18,6 +18,51 @@
       .make{
         height: 200px;
       }
+      /* new one */
+
+      
+  .card {
+    overflow: hidden;
+    position: relative;
+    height: 380px;
+    background-color: white;
+    border-radius: 8px;
+  }
+
+  .card:hover .card-content {
+    transform: translateY(0);
+  }
+
+  .card-content {
+    position: absolute;
+    bottom: 0;
+    background-color: white;
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+    transform: translateY(70%);
+    transition: transform 0.4s ease;
+  }
+
+  .card-header img {
+    object-fit: cover;
+    height: 150px;
+    width: 100%;
+    border-bottom: 2px solid #007bff;
+  }
+
+  .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .card-description {
+    opacity: 0.8;
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+
       </style>
 
    
@@ -76,91 +121,71 @@
           </h2>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 py-6 mx-4">
-          <!-- Card 1 -->
-          <div class="flex flex-col transition-transform transform hover:scale-105 hover:shadow-lg rounded-lg">
-            <div class="relative flex justify-center items-center h-36 bg-cover tanveer">
-              <img
-                src="/images/aqeel.jpeg"
-                alt="Card img"
-                class="w-28 h-28 object-cover rounded-lg absolute top-1/2 transform -translate-y-1/2"
-              />
-            </div>
-            <div class="flex flex-grow">
-              <div class="flex flex-col justify-between px-4 py-6 bg-white border border-gray-400 h-[200px] rounded-b-lg">
-                <div>
-                  <h1 class="inline-block mb-2 text-2xl font-bold capitalize border-b-2 border-blue-600 hover:text-blue-600">
-                    President
-                  </h1>
-                  <h1 class="block mb-2 text-xl font-black leading-tight hover:underline hover:text-blue-600">
-                    Aqeel Iqbal
-                  </h1>
-                  <p class="mb-2">
-                    He is the president of Balti Comsians Students Abbottabad<br>
-                    <strong>Department: Pharmacy</strong><br>
-                    <strong>Semester: 7th</strong>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+         <!-- <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 py-6 mx-4"> -->
+
+
+<!-- new card chart -->
+ <div class="flex flex-row">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 py-6 mx-4 ">
+  <!-- Example of a card with hover effect -->
+  <div class="card shadow-lg transform transition-transform hover:scale-105 " style="width: 400px;">
+    <div class="card-header">
+      <img src="/images/pic123.PNG" alt="Card Image" style="height: 300px;">
+    </div>
+    <div class="card-content">
+      <h1 class="card-title text-blue-700 border-b-2 border-blue-600">Chairman</h1>
+      <h2 class="text-xl font-black my-1">Hassanain Ibrahim</h2>
+      <p class="card-description">
+        I am the president of Balti Comsians Students Abbottabad. As the Chairman, I am honored to lead this dedicated and passionate group of individuals who are committed to making a difference for our fellow students. Our mission is to support new students, guide them through the admission process, and foster a strong community of collaboration and growth.
+        <br><strong>Department:</strong> Civil Engineering<br><strong>Semester:</strong> 8th
+      </p>
+    </div>
+  </div>
+
+ 
+</div>
+
         
-          <!-- Card 2 -->
-          <div class="flex flex-col transition-transform transform hover:scale-105 hover:shadow-lg rounded-lg">
-            <div class="relative flex justify-center items-center h-36 bg-cover tanveer">
-              <img
-                src="/images/avator.jpg"
-                alt="Card img"
-                class="w-28 h-28 object-cover rounded-lg absolute top-1/2 transform -translate-y-1/2"
-              />
-            </div>
-            <div class="flex flex-grow">
-              <div class="flex flex-col justify-between px-4 py-6 bg-white border border-gray-400 h-[200px] rounded-b-lg">
-                <div>
-                  <h1 class="inline-block mb-2 text-2xl font-bold capitalize border-b-2 border-blue-600 hover:text-blue-600">
-                    Chairman
-                  </h1>
-                  <h1 class="block mb-2 text-xl font-black leading-tight hover:underline hover:text-blue-600">
-                    Shabbir Hussain
-                  </h1>
-                  <p class="mb-2">
-                    He is the Chairman of Balti Comsians Students Abbottabad<br>
-                    <strong>Department: Pharmacy</strong><br>
+<!-- card from char -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 py-6 mx-4">
+  <!-- Example of a card with hover effect -->
+  <div class="card shadow-lg transform transition-transform hover:scale-105" style="width: 400px;">
+    <div class="card-header">
+      <img src="/images/aqeel.jpeg" alt="Card Image"style="height:410px;">
+    </div>
+    <div class="card-content">
+      <h1 class="card-title text-blue-700 border-b-2 border-blue-600">President</h1>
+      <h2 class="text-xl font-black my-1">Aqeel Iqbal</h2>
+      <p class="card-description">
+        I am the President of Balti Comsians Students Abbottabad.As the President of this dynamic organization, it is my great pleasure to lead a passionate team dedicated to fostering growth, support, and engagement for all students. We are here to help new students navigate the admission process and settle into university life with confidence.<br>
+        <strong>Department: Pharmacy</strong><br>
+        <strong>Semester: 8th</strong>
+      </p>
+    </div>
+  </div>
+
+ 
+</div>
+
+<!-- new card char -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 py-6 mx-4">
+  <!-- Example of a card with hover effect -->
+  <div class="card shadow-lg transform transition-transform hover:scale-105" style="width: 400px;">
+    <div class="card-header">
+      <img src="/images/tanveer.jpg" alt="Card Image" style="height: 300px;">
+    </div>
+    <div class="card-content">
+      <h1 class="card-title text-blue-700 border-b-2 border-blue-600">Voice President</h1>
+      <h2 class="text-xl font-black my-1">Muhamamd Tanveer Taqi</h2>
+      <p class="card-description">
+        I am the Vice President of Balti Comsians Students Abbottabad.As Vice President, I am proud to support and collaborate with our President, executive team, and members to ensure the smooth functioning of our organization. My role is to help strategize, coordinate activities, and ensure that we achieve our goals in guiding and assisting students.<br>
+                    <strong>Department: Computer Sciences</strong><br>
                     <strong>Semester: 7th</strong>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        
-          <!-- Card 3 -->
-          <div class="flex flex-col transition-transform transform hover:scale-105 hover:shadow-lg rounded-lg">
-            <div class="relative flex justify-center items-center h-36 bg-cover tanveer">
-              <img
-                src="/images/avator.jpg"
-                alt="Card img"
-                class="w-28 h-28 object-cover rounded-lg absolute top-1/2 transform -translate-y-1/2"
-              />
-            </div>
-            <div class="flex flex-grow">
-              <div class="flex flex-col justify-between px-4 py-6 bg-white border border-gray-400 h-[200px] rounded-b-lg">
-                <div>
-                  <h1 class="inline-block mb-2 text-2xl font-bold capitalize border-b-2 border-blue-600 hover:text-blue-600">
-                    Vice President
-                  </h1>
-                  <h1 class="block mb-2 text-xl font-black leading-tight hover:underline hover:text-blue-600">
-                    Hasnain Ibrahim
-                  </h1>
-                  <p class="mb-2">
-                    He is the Vice President of Balti Comsians Students Abbottabad<br>
-                    <strong>Department: Civil Engineering</strong><br>
-                    <strong>Semester: 7th</strong>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      </p>
+    </div>
+  </div>
+</div>
+
         
     </section>
     </section>
